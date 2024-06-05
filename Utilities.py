@@ -9,7 +9,7 @@ class Utilities(commands.Cog):
     @app_commands.command(name="clear", description="Clear intros from people who have left")
     @app_commands.guilds(discord.Object(id=785847181080526858))
     async def clear(self,interaction: discord.Interaction):
-        if interaction.channel.id == 936772660636033095:
+        if interaction.channel.id == :
             async for message in interaction.channel.history(limit=100):
                 if not interaction.guild.get_member(message.author.id):
                     await message.delete()  
